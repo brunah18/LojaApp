@@ -17,13 +17,14 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_margin="40dp"
+            android:layout_margin="30dp"
             android:src="@drawable/logo" />
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:drawableEnd="@drawable/ic_baseline_person"
             android:hint="Insira seu e-mail"
             android:inputType="textEmailAddress"
@@ -32,20 +33,38 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:drawableEnd="@drawable/ic_baseline_lock"
             android:hint="Insira sua senha"
             android:inputType="numberPassword"
             android:padding="10sp" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entrar" />
+            android:orientation="horizontal">
 
-        <Button
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entrar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sair" />
+        </LinearLayout>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sair" />
+            android:layout_gravity="right"
+            android:layout_marginRight="10sp"
+            android:text="Não tem conta? cadastra-se!"
+
+
     </LinearLayout>
 
 </LinearLayout>
